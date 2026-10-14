@@ -63,7 +63,7 @@ export function ChinaMap({ summaries }: { summaries: ProvinceSummary[] }) {
           itemWidth: 12,
           itemHeight: 80,
           textStyle: { color: "#5c5348", fontSize: 12 },
-          inRange: { color: ["#f3e6d4", "#e7c2a4", "#c96b52", "#8f2d2a"] },
+          inRange: { color: ["#e4eee8", "#c3d5cb", "#7d9e91", "#3e5c54"] },
         },
         series: [
           {
@@ -86,7 +86,7 @@ export function ChinaMap({ summaries }: { summaries: ProvinceSummary[] }) {
             },
             emphasis: {
               label: { show: true, color: "#1c1915" },
-              itemStyle: { areaColor: "#f0d3a4" },
+              itemStyle: { areaColor: "#d7e6dc" },
             },
             data: [
               ...summaries.map((item) => ({ ...item, name: item.geoName, value: item.count })),

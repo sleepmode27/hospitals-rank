@@ -7,7 +7,7 @@ function formatPublishedOn(iso: string) {
 
 export function SourceBar() {
   return (
-    <div className="bg-primary px-4 py-2 text-xs leading-relaxed text-primary-foreground sm:text-sm">
+    <div className="border-b border-border bg-background px-4 py-2 text-xs leading-relaxed text-muted-foreground sm:text-sm">
       <p className="mx-auto max-w-6xl">
         数据来源：{meta.publisher}《{meta.comprehensiveTitle}》《{meta.specialtyTitle}》，
         {formatPublishedOn(meta.publishedOn)}发布。全国三级甲等医院{" "}
